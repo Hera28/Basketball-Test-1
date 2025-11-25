@@ -2,28 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basketball Free Throw Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Basketball Shot Challenge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="game-container">
-        <h1>Free Throw Challenge 🏀</h1>
-        <p>Press **SPACE** to start the power meter, and press **SPACE** again to shoot!</p>
+        <h1>Basketball Shot Challenge 🏀</h1>
 
         <div class="score-board">
             Score: <span id="score">0</span> | Shot: <span id="shot-count">1</span>/10
         </div>
 
-        <div class="hoop"></div>
-        <div class="ball" id="ball"></div>
-
-        <div class="power-meter-container">
-            <div class="power-meter-background">
-                <div class="power-bar" id="powerBar"></div>
-                <div class="sweet-spot"></div>
+        <div class="court">
+            <div class="hoop-area">
+                <div class="backboard"></div>
+                <div class="rim"></div>
             </div>
-            <p id="message">Press SPACE to Start</p>
+            <div class="ball" id="ball"></div>
+        </div>
+
+        <div class="instruction-message" id="message">
+            Drag the ball to aim and set power!
         </div>
     </div>
 
