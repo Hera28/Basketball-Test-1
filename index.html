@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Free Throw Challenge</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Free Throw Challenge 🏀</h1>
+        <p>Press **SPACE** to start the power meter, and press **SPACE** again to shoot!</p>
+
+        <div class="score-board">
+            Score: <span id="score">0</span> | Shot: <span id="shot-count">1</span>/10
+        </div>
+
+        <div class="hoop"></div>
+        <div class="ball" id="ball"></div>
+
+        <div class="power-meter-container">
+            <div class="power-meter-background">
+                <div class="power-bar" id="powerBar"></div>
+                <div class="sweet-spot"></div>
+            </div>
+            <p id="message">Press SPACE to Start</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
