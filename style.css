@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    width: 600px;
+    height: 450px;
+    background-color: #a0c4ff; /* Court background */
+    border: 5px solid #333;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* --- Game Elements --- */
+.hoop {
+    width: 80px;
+    height: 10px;
+    background-color: orange;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    border-radius: 5px;
+}
+
+.ball {
+    width: 30px;
+    height: 30px;
+    background-color: #e87b00; /* Basketball color */
+    border-radius: 50%;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.5s ease-out; /* For shooting animation */
+}
+
+/* --- Power Meter --- */
+.power-meter-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.power-meter-background {
+    width: 100%;
+    height: 20px;
+    background-color: #ccc;
+    border: 1px solid #666;
+    margin-top: 10px;
+    position: relative;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.power-bar {
+    height: 100%;
+    width: 0;
+    background-color: limegreen;
+    transition: background-color 0.1s;
+}
+
+.sweet-spot {
+    position: absolute;
+    top: 0;
+    left: 45%; /* Center around 50% */
+    width: 10%; /* 45% to 55% is the sweet spot */
+    height: 100%;
+    border-left: 2px dashed red;
+    border-right: 2px dashed red;
+    box-sizing: border-box;
+}
+
+.score-board {
+    margin: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
